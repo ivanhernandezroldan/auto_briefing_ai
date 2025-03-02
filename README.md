@@ -1,99 +1,99 @@
-# Generador de Contenido desde Videos
+# Content Generator from Videos
 
-Este proyecto es una herramienta automatizada para analizar videos de redes sociales (TikTok, Instagram, etc.) y generar contenido estructurado a partir de ellos. El sistema descarga videos, extrae audio, captura fotogramas clave y utiliza modelos de IA generativa para analizar y crear contenido basado en estos videos.
+This project is an automated tool for analyzing social media videos (TikTok, Instagram, etc.) and generating structured content from them. The system downloads videos, extracts audio, captures key frames, and uses generative AI models to analyze and create content based on these videos.
 
-## Características
+## Features
 
-- Descarga de videos desde plataformas como TikTok e Instagram
-- Extracción de audio de los videos
-- Captura de fotogramas clave
-- Análisis de contenido mediante IA generativa (Gemini, OpenAI)
-- Generación de resúmenes, transcripciones y análisis
-- Exportación de resultados a Excel
+- Download videos from platforms like TikTok and Instagram
+- Extract audio from videos
+- Capture key frames
+- Content analysis using generative AI (Gemini, OpenAI)
+- Generation of summaries, transcriptions, and analysis
+- Export results to Excel
 
-## Requisitos
+## Requirements
 
 - Python 3.8+
-- FFmpeg (para procesamiento de audio/video)
-- API Key de Google Gemini o OpenAI
+- FFmpeg (for audio/video processing)
+- Google Gemini or OpenAI API Key
 
-## Instalación
+## Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
    ```
-   git clone <url-del-repositorio>
+   git clone <repository-url>
    cd content-creation
    ```
 
-2. Crea y activa un entorno virtual:
+2. Create and activate a virtual environment:
    ```
    python -m venv .venv
-   # En Windows
+   # On Windows
    .venv\Scripts\activate
-   # En macOS/Linux
+   # On macOS/Linux
    source .venv/bin/activate
    ```
 
-3. Instala las dependencias:
+3. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-4. Configura las variables de entorno:
+4. Configure environment variables:
    ```
    cp .env.example .env
    ```
-   Edita el archivo `.env` y añade tus claves API.
+   Edit the `.env` file and add your API keys.
 
-## Uso
+## Usage
 
-1. Coloca las URLs de los videos en el archivo `data/input/links.txt`, una URL por línea.
+1. Place the video URLs in the `data/input/links.txt` file, one URL per line.
 
-2. Ejecuta el programa:
+2. Run the program:
    ```
    python main.py
    ```
 
-3. Los resultados se guardarán en la carpeta `data/output/`, organizados por video.
+3. Results will be saved in the `data/output/` folder, organized by video.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 content-creation/
-├── app/                    # Código principal de la aplicación
-│   ├── controllers/        # Controladores de la lógica de negocio
-│   ├── services/           # Servicios para diferentes funcionalidades
-│   └── models/             # Modelos de datos
-├── config/                 # Configuración de la aplicación
-├── data/                   # Datos de entrada y salida
-│   ├── input/              # Archivos de entrada (links.txt)
-│   └── output/             # Resultados generados
-├── jobs/                   # Trabajos y procesos principales
-├── logs/                   # Archivos de registro
-├── .env.example            # Plantilla para variables de entorno
-├── main.py                 # Punto de entrada principal
-└── requirements.txt        # Dependencias del proyecto
+├── app/                    # Main application code
+│   ├── controllers/        # Business logic controllers
+│   ├── services/           # Services for different functionalities
+│   └── models/             # Data models
+├── config/                 # Application configuration
+├── data/                   # Input and output data
+│   ├── input/              # Input files (links.txt)
+│   └── output/             # Generated results
+├── jobs/                   # Main jobs and processes
+├── logs/                   # Log files
+├── .env.example            # Template for environment variables
+├── main.py                 # Main entry point
+└── requirements.txt        # Project dependencies
 ```
 
-## Dependencias Principales
+## Main Dependencies
 
-- python-dotenv: Gestión de variables de entorno
-- google-generativeai: API de Google Gemini
-- langchain: Framework para aplicaciones de IA
-- ffmpeg-python: Procesamiento de audio y video
-- pandas/openpyxl: Manipulación y exportación de datos
+- python-dotenv: Environment variable management
+- google-generativeai: Google Gemini API
+- langchain: Framework for AI applications
+- ffmpeg-python: Audio and video processing
+- pandas/openpyxl: Data manipulation and export
 
-## Configuración
+## Configuration
 
-El archivo `.env` permite configurar:
-- Claves API para modelos de IA (Gemini, OpenAI)
-- Selección del proveedor de IA a utilizar
-- Modelo específico a utilizar para el análisis
+The `.env` file allows you to configure:
+- API keys for AI models (Gemini, OpenAI)
+- Selection of the AI provider to use
+- Specific model to use for analysis
 
-## Licencia
+## License
 
-[Especificar la licencia del proyecto]
+[Specify the project license]
 
-## Contribuciones
+## Contributions
 
-[Instrucciones para contribuir al proyecto]
+[Instructions for contributing to the project]
