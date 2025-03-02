@@ -54,7 +54,7 @@ This project is an automated tool for analyzing social media videos (TikTok, Ins
    python main.py
    ```
 
-3. Results will be saved in the `data/output/` folder, organized by video.
+3. Results will be saved in the `data/output/` folder, organized by execution.
 
 ## Project Structure
 
