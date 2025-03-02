@@ -1,4 +1,4 @@
-# Content Generator from Videos
+# Content Briefing from Video References
 
 This project is an automated tool for analyzing social media videos (TikTok, Instagram, etc.) and generating structured content from them. The system downloads videos, extracts audio, captures key frames, and uses generative AI models to analyze and create content based on these videos.
 
