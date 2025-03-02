@@ -47,7 +47,7 @@ This project is an automated tool for analyzing social media videos (TikTok, Ins
 
 ## Usage
 
-1. Place the video URLs in the `data/input/links.txt` file, one URL per line.
+1. Place the video URLs in the `data/input/links.txt` file (create it if it doesn't exist), one URL per line.
 
 2. Run the program:
    ```
